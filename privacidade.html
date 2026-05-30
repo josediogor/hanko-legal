@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade · Hanko</title>
+<style>
+  :root { --ink:#1c1a17; --paper:#f4efe5; --muted:#6b655c; --red:#e4572e; --line:#e0d8c8; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 96px; }
+  h1 { font-size: 2rem; line-height: 1.1; margin: 0 0 6px; }
+  .kicker { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--red); font-weight: 700; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 4px 0 36px; }
+  h2 { font-size: 1.2rem; margin: 38px 0 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 20px 0 6px; }
+  p, li { font-size: 1rem; color: #2a2723; }
+  a { color: var(--red); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Hanko</div>
+  <h1>Política de Privacidade</h1>
+  <p class="updated">Última atualização: 30 de maio de 2026</p>
+
+  <p>Esta política explica quais dados o aplicativo <strong>Hanko</strong> coleta, por que coleta e o que fazemos com eles. O Hanko é mantido por <strong>José Diogo (Coco Studio)</strong>, pessoa física, atuando como controlador dos dados. Dúvidas ou pedidos sobre seus dados: <a href="mailto:josediogor@gmail.com">josediogor@gmail.com</a>.</p>
+
+  <p>Nosso princípio é simples: coletar o mínimo necessário pra você aprender idiomas a partir de fotos, e manter a maior parte dos seus dados no seu próprio dispositivo.</p>
+
+  <h2>1. Quais dados tratamos e por quê</h2>
+
+  <h3>Conta e identidade</h3>
+  <p>Quando você entra com Apple, Google ou email, recebemos seu <strong>nome</strong> (quando você o fornece), <strong>email</strong> e um <strong>identificador da conta</strong>. Usamos isso pra identificar você no app. Na versão atual, esses dados ficam armazenados <strong>localmente no seu dispositivo</strong>. O login em si é processado pela Apple ou pelo Google.</p>
+
+  <h3>Fotos que você captura</h3>
+  <p>Quando você fotografa um objeto pra "selar" uma palavra, a imagem é <strong>enviada aos nossos servidores (Supabase) e ao serviço de inteligência artificial da OpenAI</strong> para identificar o objeto e gerar a palavra, a pronúncia e as frases. A imagem recortada e o resultado ficam salvos <strong>no seu dispositivo</strong>, na sua coleção de selos. Não usamos suas fotos para treinar modelos de IA. A OpenAI processa a imagem apenas para responder à solicitação e a retém por um período limitado para fins de segurança e prevenção de abuso, conforme a política dela.</p>
+
+  <h3>Localização (opcional)</h3>
+  <p>Se você autorizar, usamos sua <strong>localização aproximada apenas no momento da captura</strong> para marcar em qual cidade você selou cada palavra. Esse dado fica no seu dispositivo. Você pode recusar e continuar usando o app normalmente.</p>
+
+  <h3>Identificador do aplicativo</h3>
+  <p>Geramos um <strong>código aleatório por instalação</strong> do app, enviado junto com cada solicitação de reconhecimento. Ele serve apenas para limitar abuso e controlar custos do serviço — não identifica você pessoalmente e desaparece quando o app é desinstalado.</p>
+
+  <h3>Notificações (opcional)</h3>
+  <p>Se você ativar, enviamos lembretes locais (por exemplo, do seu streak diário). Você controla isso nos Ajustes do app e do sistema.</p>
+
+  <h3>Pagamentos</h3>
+  <p>Se você assinar o Hanko Premium, o pagamento é processado pela <strong>Apple</strong>. Nós não recebemos nem armazenamos os dados do seu cartão.</p>
+
+  <h2>2. Onde seus dados ficam</h2>
+  <p>Na versão atual, a maior parte dos seus dados (selos, coleção, preferências, identidade) é armazenada <strong>localmente no seu dispositivo</strong>, sem sincronização em nuvem. As exceções são as imagens enviadas para reconhecimento (descrito acima) e os serviços de terceiros listados abaixo.</p>
+
+  <h2>3. Serviços de terceiros</h2>
+  <p>Para funcionar, o Hanko usa os seguintes serviços, cada um com sua própria política de privacidade:</p>
+  <ul>
+    <li><strong>Apple</strong> — login (Sign in with Apple), notificações e pagamentos.</li>
+    <li><strong>Google</strong> — login com conta Google (quando você escolhe essa opção).</li>
+    <li><strong>Supabase</strong> — infraestrutura de servidor que recebe a imagem e a repassa ao serviço de IA.</li>
+    <li><strong>OpenAI</strong> — reconhecimento da imagem e geração da palavra, pronúncia e frases.</li>
+  </ul>
+  <p>Não vendemos seus dados e não os usamos para publicidade.</p>
+
+  <h2>4. Por quanto tempo guardamos</h2>
+  <p>Os dados no seu dispositivo permanecem até você apagá-los no app (opção "apagar minha conta" nos Ajustes) ou desinstalar o aplicativo. As imagens enviadas para reconhecimento são retidas pela OpenAI por um período limitado conforme a política dela e não ficam armazenadas permanentemente nos nossos servidores.</p>
+
+  <h2>5. Seus direitos (LGPD)</h2>
+  <p>Conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a confirmar o tratamento, acessar, corrigir, anonimizar, portar ou eliminar seus dados, e revogar consentimentos. Como a maior parte dos dados fica no seu dispositivo, você pode exercer boa parte disso diretamente: editar seu perfil e idiomas nos Ajustes, ou usar <strong>"apagar minha conta"</strong> para eliminar tudo. Para qualquer outro pedido, escreva para <a href="mailto:josediogor@gmail.com">josediogor@gmail.com</a> — respondemos no menor prazo possível.</p>
+
+  <h2>6. Crianças</h2>
+  <p>O Hanko não é direcionado a menores de 13 anos e não coletamos intencionalmente dados de crianças. Se você é responsável e acredita que uma criança nos enviou dados, entre em contato para que possamos removê-los.</p>
+
+  <h2>7. Segurança</h2>
+  <p>Adotamos medidas razoáveis para proteger seus dados, incluindo o uso de conexões criptografadas e o armazenamento da chave de IA exclusivamente no servidor (nunca no app). Nenhum sistema é 100% seguro, mas trabalhamos para reduzir riscos.</p>
+
+  <h2>8. Mudanças nesta política</h2>
+  <p>Podemos atualizar esta política conforme o app evolui (por exemplo, quando a sincronização em nuvem for lançada). Mudanças relevantes serão indicadas pela data de "última atualização" no topo desta página.</p>
+
+  <h2>9. Contato</h2>
+  <p>Dúvidas, pedidos ou reclamações sobre privacidade: <a href="mailto:josediogor@gmail.com">josediogor@gmail.com</a>.</p>
+
+  <footer>
+    Hanko · Coco Studio · Feito com carinho em São Paulo.
+  </footer>
+</div>
+</body>
+</html>
