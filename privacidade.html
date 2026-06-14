@@ -39,7 +39,7 @@
   <h2>1. Quais dados tratamos e por quê</h2>
 
   <h3>Conta e identidade</h3>
-  <p>Quando você entra com Apple, Google ou email, recebemos seu <strong>nome</strong> (quando você o fornece), <strong>email</strong> e um <strong>identificador da conta</strong>. Usamos isso pra identificar você no app. Na versão atual, esses dados ficam armazenados <strong>localmente no seu dispositivo</strong>. O login em si é processado pela Apple ou pelo Google.</p>
+  <p>Quando você entra com Apple, Google ou email, recebemos seu <strong>nome</strong> (quando você o fornece), <strong>email</strong> e um <strong>identificador da conta</strong>, usados pra identificar você no app. Seu nome e seus selos ficam <strong>no seu dispositivo</strong>. Se você escolher entrar por <strong>email</strong>, seu endereço é armazenado nos nossos servidores de autenticação (<strong>Supabase</strong>, fora do Brasil) para criar e gerenciar sua conta, e enviamos um link de acesso (<em>magic link</em>) para esse email. O login com Apple ou Google é processado por essas empresas; o login por email é processado pelo Supabase.</p>
 
   <h3>Fotos que você captura</h3>
   <p>Quando você fotografa um objeto pra "selar" uma palavra, a imagem é <strong>enviada aos nossos servidores (Supabase) e ao serviço de inteligência artificial da OpenAI</strong> para identificar o objeto e gerar a palavra, a pronúncia e as frases. A imagem recortada e o resultado ficam salvos <strong>no seu dispositivo</strong>, na sua coleção de selos. Não usamos suas fotos para treinar modelos de IA. A OpenAI processa a imagem apenas para responder à solicitação e a retém por um período limitado para fins de segurança e prevenção de abuso, conforme a política dela.</p>
@@ -57,14 +57,14 @@
   <p>Se você assinar o Hanko Premium, o pagamento é processado pela <strong>Apple</strong>. Nós não recebemos nem armazenamos os dados do seu cartão.</p>
 
   <h2>2. Onde seus dados ficam</h2>
-  <p>Na versão atual, a maior parte dos seus dados (selos, coleção, preferências, identidade) é armazenada <strong>localmente no seu dispositivo</strong>, sem sincronização em nuvem. As exceções são as imagens enviadas para reconhecimento (descrito acima) e os serviços de terceiros listados abaixo.</p>
+  <p>Na versão atual, a maior parte dos seus dados (selos, coleção, preferências, nome) é armazenada <strong>localmente no seu dispositivo</strong>, sem sincronização em nuvem. As exceções são as imagens enviadas para reconhecimento (descrito acima), o seu <strong>email</strong> quando você entra por email (armazenado no Supabase para autenticação) e os serviços de terceiros listados abaixo.</p>
 
   <h2>3. Serviços de terceiros</h2>
   <p>Para funcionar, o Hanko usa os seguintes serviços, cada um com sua própria política de privacidade:</p>
   <ul>
     <li><strong>Apple</strong> — login (Sign in with Apple), notificações e pagamentos.</li>
     <li><strong>Google</strong> — login com conta Google (quando você escolhe essa opção).</li>
-    <li><strong>Supabase</strong> — infraestrutura de servidor que recebe a imagem e a repassa ao serviço de IA.</li>
+    <li><strong>Supabase</strong> — infraestrutura de servidor que recebe a imagem e a repassa ao serviço de IA, e que processa a autenticação por email (armazena seu email para criar a conta e enviar o link de acesso).</li>
     <li><strong>OpenAI</strong> — reconhecimento da imagem e geração da palavra, pronúncia e frases.</li>
   </ul>
   <p>Não vendemos seus dados e não os usamos para publicidade.</p>
